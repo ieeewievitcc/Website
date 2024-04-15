@@ -121,8 +121,36 @@ body {
 .content .text-container {
     position: relative;
     z-index: 1;
-    margin: 20px;
 }
+
+.content .text-container1 {
+    position: relative;
+    z-index: 1;
+}
+
+.text-container1{
+    background: linear-gradient(176deg, #bf8af0 0%, #d398ec 50%, #eda5e8 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding-inline: 100px;
+    padding-block: 50px;
+    margin-inline: 10%;
+    color: black;
+    transition: transform 0.5s ease;
+}
+
+.about-h1{
+    margin: 0 0 15px 0;
+}
+
+.para-small{
+    margin: 0 0 15px 0;
+    font-size: 17px;
+}
+
+.text-container1:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
 
 /* Overlay for the content section */
 .content:before {
@@ -263,6 +291,21 @@ button[type=button]:hover {
     .form-container {
         width: 80%;
         height: auto;
+    }
+    .about-h1{
+        font-size: 30px;
+    }
+    .para-small{
+        font-size: 13px;
+    }
+    .text-container1{
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .text-container{
+        margin-inline: 60%;
     }
 }
 
